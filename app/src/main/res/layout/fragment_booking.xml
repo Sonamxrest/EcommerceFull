@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.BookingFragment">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="4dp"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center"
+    app:cardBackgroundColor="#F9A825">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Your Cart is Empty"
+          android:layout_weight="1"
+          android:id="@+id/cart"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:fontFamily="@font/font2"
+          android:textColor="@color/white"
+          android:padding="10dp"
+          android:textSize="20dp"/>
+
+
+</androidx.cardview.widget.CardView>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+android:layout_weight="1"
+       android:id="@+id/rv"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_gravity="bottom"
+       android:gravity="bottom"
+       android:background="@drawable/add_to_cart"
+       android:orientation="horizontal"
+
+       android:id="@+id/order"
+       >
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="10dp"
+          android:src="@drawable/ic_baseline_shopping_cart_24"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:text="Place Order:-"
+          android:padding="10dp"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:fontFamily="@font/font2"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:text="$90"
+          android:layout_gravity="center"
+          android:fontFamily="@font/font2"
+          android:layout_weight="1"
+          android:id="@+id/price"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+   </LinearLayout>
+</LinearLayout>

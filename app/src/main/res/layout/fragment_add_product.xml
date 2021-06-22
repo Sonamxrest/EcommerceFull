@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0277BD"
+    tools:context=".Fragments.AddProduct">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_margin="4dp"
+       app:cardBackgroundColor="#AD1457"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:text="Add Products"
+       android:textStyle="bold"
+       android:textSize="30dp"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="start"
+       android:textColor="@color/white"
+       android:text="Select Image"
+       android:textStyle="bold"
+       android:layout_margin="10dp"
+       android:textSize="15dp"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="10dp"
+       android:orientation="horizontal">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:id="@+id/root"/>
+      <ImageButton
+          android:layout_width="80dp"
+          android:scaleType="fitXY"
+          android:layout_height="80dp"
+          android:src="@drawable/add"
+          android:id="@+id/add"
+          android:background="@drawable/round_button"/>
+
+   </LinearLayout>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/name"
+       android:hint="Name"
+       android:layout_margin="10dp"
+       android:padding="20dp"
+       android:background="@color/white"/>
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+       android:padding="20dp"
+       android:id="@+id/spinner"
+       android:background="@color/white"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/price"
+       android:hint="Price"
+       android:inputType="number"
+       android:layout_margin="10dp"
+       android:padding="20dp"
+       android:background="@color/white"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/stock"
+       android:hint="Stock"
+       android:inputType="number"
+       android:layout_margin="10dp"
+       android:padding="20dp"
+       android:background="@color/white"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/description"
+       android:hint="Description"
+
+       android:layout_margin="10dp"
+       android:padding="20dp"
+       android:background="@color/white"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/submit"
+    android:backgroundTint="@color/flat_green_1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="Sumbit"/>
+</LinearLayout>
+
+
+</ScrollView>

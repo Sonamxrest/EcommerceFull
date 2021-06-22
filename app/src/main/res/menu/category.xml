@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Clothes"
+    android:id="@+id/clothes"
+    android:icon="@drawable/c"/>
+    <item android:title="Electronics"
+        android:id="@+id/electronics"
+        android:icon="@drawable/computer"/>
+    <item android:title="Furniture"
+        android:id="@+id/furniture"
+        android:icon="@drawable/chair"/>
+    <item android:title="Glasses"
+        android:id="@+id/glass"
+        android:icon="@drawable/glasses"/>
+</menu>
